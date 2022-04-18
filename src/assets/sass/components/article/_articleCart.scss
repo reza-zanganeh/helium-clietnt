@@ -1,0 +1,132 @@
+/** @format */
+.articleCart {
+  @include respond(tab-land) {
+    justify-content: space-evenly;
+  }
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+  margin-bottom: 4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 30.3rem;
+
+  & > img {
+    width: 45.8rem;
+    border-radius: 5px;
+    height: 100%;
+    @include respond(tab-port) {
+      width: 90%;
+    }
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include respond(tab-land) {
+      width: 45.8rem;
+    }
+
+    @include respond(tab-port) {
+      width: 90%;
+      margin-top: 5rem;
+    }
+
+    width: 55.5rem;
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &__action {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
+      width: 10.5rem;
+      .icon-small[alt='bookmark'] {
+        margin-right: auto;
+      }
+    }
+
+    &__body {
+      .heading-1 {
+        margin-bottom: 0.5rem;
+        transition: color 0.5s;
+      }
+      .paragraph-1 {
+        margin-bottom: 2rem;
+      }
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      @include respond(tab-port) {
+        justify-content: center;
+        padding: 1rem 0;
+      }
+      .tags {
+        @include respond(tab-port) {
+          margin: 1rem 0;
+        }
+      }
+    }
+  }
+} //end of articleCart
+
+.articleCart-small {
+  margin-bottom: 3rem;
+  width: 100%;
+  height: 17.3rem;
+  @include respond(tab-land) {
+    justify-content: space-between;
+  }
+  @include respond(tab-port) {
+    flex-direction: column;
+    height: auto;
+  }
+  & > img {
+    width: 26.2rem;
+  }
+
+  .articleCart-info {
+    width: 45.8rem;
+    &__body {
+      .heading-1 {
+        margin-bottom: 2rem;
+      }
+    }
+    @include respond(tab-port) {
+      width: 90%;
+      margin-top: 5rem;
+    }
+  }
+
+  .icon-small {
+    margin-right: 1.5rem;
+  }
+} //end of articleCart small
+
+// article cart for profile
+.articleCart-profile__action {
+  display: flex;
+  align-items: center;
+  & > * {
+    margin-right: 1rem;
+  }
+}

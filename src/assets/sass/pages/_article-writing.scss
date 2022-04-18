@@ -1,0 +1,56 @@
+.article-writing {
+  padding-bottom: 9.9rem;
+  @include respond(tab-port) {
+    text-align: center;
+  }
+}
+#title,
+#content {
+  margin: 3rem 0;
+  border: none;
+  font-family: inherit;
+  color: var(--main-font-color);
+  width: 100%;
+  height: 10rem;
+  background-color: transparent;
+  resize: none;
+  padding: 1rem;
+}
+
+#content {
+  height: 30rem;
+  margin-bottom: 6.2rem;
+}
+#selectedTags,
+#newTag {
+  max-width: 49.5rem;
+  width: 100%;
+  height: 5rem;
+  margin: 3.3rem 0 3rem 0.1rem;
+  padding: 1rem 1.6rem 1.1rem 4rem;
+  border-radius: 10px;
+  border: solid 1px rgba($water-blue, 0.3);
+  background-color: $white-three;
+  font-family: inherit;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.selectTag-box {
+  position: relative;
+}
+#selectedTags + .icon-small {
+  position: absolute;
+  left: 1.3rem;
+  top: 4.6rem;
+  pointer-events: none;
+}
+.success-full {
+  margin: 1rem auto 1rem auto;
+  height: 15rem;
+  width: 15rem;
+}
+.message-box {
+  flex-direction: column;
+}

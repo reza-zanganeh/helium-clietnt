@@ -1,0 +1,36 @@
+.wrapper {
+  padding-top: 1.95rem;
+  border-top: 1px solid rgba($water-blue, 0.3);
+}
+.comment {
+  &-item {
+    margin: 0.7rem 0;
+    .paragraph-1 {
+      font-weight: bold;
+    }
+    &__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &-info {
+        margin: 0.4rem 0 1rem 0;
+        display: flex;
+        align-items: center;
+      }
+      &-action {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &__content {
+      overflow-wrap: break-word;
+      width: 100%;
+    }
+  }
+}
+.comment-item__header-action {
+  & > .icon-small {
+    margin-right: 2rem;
+  }
+}

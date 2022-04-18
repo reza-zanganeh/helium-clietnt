@@ -1,0 +1,31 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  @include respond(tab-port) {
+    align-items: center;
+  }
+  .btn {
+    align-self: flex-end;
+    margin-bottom: 10rem;
+    @include respond(tab-port) {
+      align-self: center;
+    }
+  }
+  .spinner {
+    justify-content: flex-end;
+    align-self: flex-end;
+    width: initial;
+    margin-bottom: 10rem;
+    @include respond(tab-port) {
+      margin: 0 auto 10rem auto;
+    }
+  }
+}
+.form-group {
+  @include respond(tab-port) {
+    width: 90%;
+  }
+}
+#content {
+  resize: none;
+}

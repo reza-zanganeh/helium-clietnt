@@ -1,0 +1,32 @@
+/** @format */
+
+.article {
+  padding: 2.9rem 0 7rem 0;
+  &-body {
+    @include respond(tab-port) {
+      text-align: center;
+    }
+  }
+  &-header {
+    &__author {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      .fallow {
+        margin-right: 1.5rem;
+      }
+    }
+    &__info {
+      margin-top: 1.5rem;
+      display: flex;
+      align-items: center;
+      .icon-small {
+        margin: 0 1.5rem 0 1.7rem;
+      }
+    }
+  }
+  &-image {
+    display: block;
+    margin: 3rem auto;
+  }
+}

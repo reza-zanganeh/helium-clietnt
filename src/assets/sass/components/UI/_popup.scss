@@ -1,0 +1,46 @@
+.backdrop {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 32, 50, 0.2);
+}
+.popUp {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 55.5rem;
+  width: 90%;
+  min-height: 29.2rem;
+  padding: 2.9rem 3rem 5rem 2.9rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px 0 rgba($dark-blue-grey, 0.1);
+  border: solid 1px #bae3ef;
+  background-color: $main-color;
+  display: flex;
+  flex-direction: column;
+}
+// popUp animation
+@import '@/assets/sass/abstract/_animations.scss';
+.popup-enter-active {
+  animation: move-down 0.5s ease-in-out;
+}
+.popup-leave-active {
+  animation: move-down 0.5s ease-in-out alternate-reverse;
+}
+.popUp {
+  & .icon-small {
+    margin-right: auto;
+  }
+  &-action {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 3rem;
+    & > * {
+      margin-right: 1rem;
+    }
+  }
+}

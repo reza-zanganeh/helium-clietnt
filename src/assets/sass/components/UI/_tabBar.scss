@@ -1,0 +1,36 @@
+/** @format */
+
+.tabBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba($water-blue, 0.3);
+}
+
+.tab {
+  padding-bottom: 17px;
+  height: 45px;
+  margin-left: 4rem;
+  position: relative;
+  cursor: pointer;
+  &.active {
+    color: $water-blue;
+    font-weight: bold;
+    min-width: 12.4rem;
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $water-blue;
+      width: 100%;
+      height: 1px;
+      bottom: -1px;
+      left: 0;
+    }
+  }
+  &.disactive-color {
+    color: var(--main-font-color);
+  }
+  &.disactive-minWidth {
+    min-width: initial;
+  }
+}

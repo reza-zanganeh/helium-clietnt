@@ -1,0 +1,73 @@
+/** @format */
+.navbar {
+  height: 6.5rem;
+  width: 100%;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.05);
+  padding: 12px 0 11px 0;
+  position: relative;
+  @include respond(phone) {
+    height: auto;
+    padding: 28px 0 27px 0;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include respond(tab-land) {
+      padding: 0 3rem;
+    }
+    @include respond(phone) {
+      flex-direction: column;
+    }
+    .logo-box {
+      @include respond(phone) {
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  &-feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include respond(phone) {
+      width: 100%;
+    }
+    & > img {
+      margin: 9px 0 9px 25px;
+    }
+  }
+}
+
+.form {
+  &-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    button {
+      cursor: pointer;
+      position: absolute;
+      border: none;
+      top: 17px;
+      right: 11px;
+      padding-left: 10.5px;
+      border-left: solid 1px rgba($water-blue, 0.3);
+      background: transparent;
+    }
+    &__input {
+      width: 25.6rem;
+      @include respond(tab-port) {
+        width: 90%;
+      }
+      height: 4rem;
+      margin: 9px 0 9px 1.5rem;
+      padding-right: 5.8rem;
+      font-size: 1.4rem;
+      font-family: inherit;
+      border-radius: 10px;
+      border: solid 1px rgba(19, 158, 202, 0.3);
+      background-color: $white-three;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+.profile {
+  .showcase {
+    width: 100%;
+    height: 16.7rem;
+    object-fit: contain;
+    @include respond(tab-land) {
+      height: auto;
+    }
+  }
+  .author-info {
+    width: 100%;
+    display: flex;
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__image {
+      width: 16.5rem;
+      height: 16.5rem;
+      object-fit: contain;
+      border-radius: 30px;
+      transform: translate(-2.8rem, -8rem);
+      margin-left: 6rem;
+      @include respond(tab-land) {
+        width: 12rem;
+        height: 12rem;
+      }
+      @include respond(tab-port) {
+        display: none;
+      }
+    }
+    &__name {
+      @include respond(tab-port) {
+        margin-left: 0;
+      }
+      padding-top: 2rem;
+      margin-left: auto;
+      .d-flex {
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      .paragraph-1:nth-child(1),
+      .dot {
+        font-weight: bold;
+      }
+      .dot {
+        height: 4px;
+        width: 4px;
+        background-color: $dark-blue-grey;
+        margin: 0 1rem;
+      }
+    }
+    &__action {
+      margin-top: 4.8rem;
+      @include respond(tab-land) {
+        padding-bottom: 3rem;
+      }
+      display: flex;
+      @include respond(phone) {
+        flex-direction: column;
+      }
+      .btn {
+        display: flex;
+        align-items: center;
+        padding: 0;
+        justify-content: center;
+        .icon-small {
+          margin-right: 0.5rem;
+        }
+        &-outline {
+          color: $tealish;
+          margin-left: 3rem;
+          @include respond(phone) {
+            margin: 0 0 3rem 0;
+          }
+        }
+      }
+    }
+  }
+}

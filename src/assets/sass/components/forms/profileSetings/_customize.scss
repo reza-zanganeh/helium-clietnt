@@ -1,0 +1,113 @@
+button {
+  border: none;
+  cursor: pointer;
+}
+.customize {
+  @include respond(tab-port) {
+    flex-direction: column;
+    align-items: center;
+  }
+  padding: 3.95rem 0 13.9rem 0;
+  align-items: center;
+  .heading-2-bold {
+    margin-bottom: 2.7rem;
+  }
+  &-fonts {
+    width: 41.3rem;
+    .fonts {
+      .btn {
+        margin-left: 1rem;
+        height: 3.2rem;
+        font-size: 1.6rem;
+        padding: 0.3rem 0.8rem;
+        width: initial;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  &-color__fonts {
+    width: 39rem;
+    .color {
+      width: 2rem;
+      height: 2rem;
+      margin-left: 2rem;
+      border-radius: 5px;
+      position: relative;
+      &:last-child {
+        margin: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        background-color: transparent;
+        transition: background-color 0.5s linear;
+        transform: scale(1.5);
+        z-index: -1;
+      }
+      &-active::after {
+        background-color: $tealish;
+      }
+    }
+  }
+  &-size__fonts {
+    @include respond(tab-port) {
+      text-align: center;
+    }
+    .sizes {
+      display: flex;
+      align-items: center;
+    }
+    .size {
+      margin-left: 1rem;
+      text-align: center;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    .small {
+      width: 3.4rem;
+      padding: 3px 0;
+      font-size: 1.4rem;
+      font-weight: normal;
+    }
+    .medium {
+      width: 3.9rem;
+      padding: 3px 0;
+    }
+    .large {
+      width: 4.2rem;
+      padding: 3px 0;
+      font-size: 2.4rem;
+    }
+  }
+}
+.btn {
+  font-weight: bold;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 6px;
+  border: solid 1px $tealish;
+  background: transparent;
+  color: inherit;
+}
+
+.font-active,
+.size-active {
+  background-color: $tealish;
+  color: $white-three;
+  border: none;
+}
+.box-center {
+  @include respond(tab-port) {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+}

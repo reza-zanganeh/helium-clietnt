@@ -1,0 +1,62 @@
+#article-image {
+  display: none;
+}
+.imagePreviewWrapper {
+  height: 49.6rem;
+  width: 100%;
+  display: block;
+  border-radius: 5px;
+  @include respond(tab-port) {
+    width: 90%;
+  }
+  margin: 0 auto;
+  transition: all 1s ease-in-out;
+  border: solid 2px rgba(0, 67, 105, 0.15);
+}
+
+.imagePreviewWrapper.activeMaximize {
+  transform: scale(1.6);
+  @include respond(tab-land) {
+    transform: scale(1.4);
+  }
+  @include respond(tab-port) {
+    transform: scale(1.15);
+  }
+}
+
+.imagePreview {
+  position: relative;
+  overflow: hidden;
+}
+.add-picture,
+.maximize {
+  display: block;
+  width: 42px;
+  height: 42px;
+  padding: 9px;
+  border-radius: 50%;
+  background-color: $tealish;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  position: absolute;
+  top: calc(50% - 2.1rem);
+}
+
+.add-picture {
+  left: 40%;
+  @include respond(tab-port) {
+    left: 30%;
+  }
+}
+
+.maximize {
+  right: 40%;
+  @include respond(tab-port) {
+    right: 30%;
+  }
+}

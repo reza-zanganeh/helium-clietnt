@@ -1,0 +1,31 @@
+.tags {
+  margin: 4rem 0 7rem 0;
+  .heading-2 {
+    margin-left: 3.6rem;
+  }
+}
+
+#selectedTags {
+  max-width: 49.5rem;
+  width: 100%;
+  height: 5rem;
+  margin: 3.3rem 0 3rem 0.1rem;
+  padding: 1rem 1.6rem 1.1rem 4rem;
+  border-radius: 10px;
+  border: solid 1px rgba($water-blue, 0.3);
+  background-color: $white-three;
+  font-family: inherit;
+  font-size: 1.8rem;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.selectTag-box {
+  position: relative;
+}
+#selectedTags + .icon-small {
+  position: absolute;
+  left: 1.3rem;
+  top: 4.6rem;
+  pointer-events: none;
+}

@@ -1,0 +1,68 @@
+.d-flex {
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+}
+.about-you {
+  display: flex;
+  @include respond(tab-port) {
+    flex-direction: column;
+  }
+  padding: 3.95rem 0;
+  align-items: center;
+  .heading-2 {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+  &__body {
+    padding: 0.5rem 3rem 0 0;
+    @include respond(tab-port) {
+      align-self: flex-start;
+      padding: 3rem 3rem 0 0;
+      width: 100%;
+    }
+  }
+  .input-group {
+    display: flex;
+    flex-direction: column;
+    .input {
+      height: 38px;
+      border-radius: 6px;
+      border: solid 2px #339cbf;
+      background-color: $white-three;
+      font-family: inherit;
+      color: inherit;
+      padding: 1.2rem 0.6rem;
+      font-size: 1.6rem;
+    }
+  }
+  .name,
+  .family {
+    width: 26.3rem;
+  }
+  .family {
+    margin-right: 3rem;
+    @include respond(tab-port) {
+      margin: 0;
+    }
+  }
+  .bio {
+    margin-top: 1.5rem;
+    width: 55.5rem;
+  }
+  .name,
+  .family,
+  .bio {
+    @include respond(tab-port) {
+      width: 90%;
+    }
+  }
+}
+.btn-circle {
+  margin-right: auto;
+  align-self: flex-start;
+  @include respond(tab-port) {
+    align-self: center;
+    margin: 3rem 0 0 0;
+  }
+}

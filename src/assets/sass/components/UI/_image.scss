@@ -1,0 +1,11 @@
+.article-image {
+  width: 75rem;
+  height: 49.6rem;
+  border-radius: 5px;
+  @include respond(tab-land) {
+    height: auto;
+  }
+  @include respond(tab-port) {
+    width: 90%;
+  }
+}

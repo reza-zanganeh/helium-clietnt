@@ -1,0 +1,20 @@
+.profile-about {
+  margin: 3.95rem 0 10rem 0;
+  max-width: 75rem;
+  .paragraph-1:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 2.3rem;
+  }
+  .social-etworks {
+    display: flex;
+    flex-direction: column;
+  }
+  .social-network {
+    display: flex;
+    align-items: center;
+    padding: 0.75rem 0;
+    .paragraph-1 {
+      margin-right: 1.2rem;
+    }
+  }
+}

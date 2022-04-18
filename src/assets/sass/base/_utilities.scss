@@ -1,0 +1,166 @@
+/** @format */
+.page-heading {
+  margin: 5.9rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  .icon-small {
+    margin-left: 1.5rem;
+  }
+}
+
+.icon-small {
+  height: 2.4rem;
+  width: 2.4rem;
+  cursor: pointer;
+}
+
+.logo-box img {
+  height: 4.2rem;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid rgba($water-blue, 0.3);
+}
+
+.dot {
+  display: block;
+  height: 3px;
+  width: 3px;
+  background-color: $warm-gray;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-flex-column__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.col {
+  width: 48.7rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-box {
+  width: 100%;
+  min-height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.d-block {
+  display: block;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+.mb-4 {
+  margin-bottom: 4rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+// bg color
+.dark-blue-grey {
+  background-color: $dark-blue-grey;
+}
+
+.black {
+  background-color: $black;
+}
+
+.warm-grey {
+  background-color: $warm-gray-2;
+}
+
+.blue-grey {
+  background-color: $blue-grey;
+}
+
+// tags
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  border-radius: 17px;
+  background-color: $pale-grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1rem;
+
+  .icon-small {
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 5px 5px 5px 0;
+    cursor: pointer;
+  }
+  &-small {
+    min-width: 6.3rem;
+    height: 2.4rem;
+    padding: 2px 11px 3px 12px;
+    font-size: 1.2rem;
+    color: $greyish-brown;
+  }
+
+  &-medium {
+    min-width: 8.3rem;
+    height: 3.4rem;
+    padding: 4px 1.5rem;
+    background-color: $pale-grey;
+    font-size: 1.6rem;
+  }
+
+  &-big {
+    min-width: 10.7rem;
+    height: 3.4rem;
+    padding: 4px 15px;
+    font-size: 1.6rem;
+    color: var(--main-font-color);
+  }
+}
+
+.disableInput {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}

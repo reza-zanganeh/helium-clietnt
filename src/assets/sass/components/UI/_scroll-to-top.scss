@@ -1,0 +1,32 @@
+.circle {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  height: 5rem;
+  width: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-blue-grey;
+  border-radius: 50%;
+  .icon-small {
+    height: 75%;
+    width: 75%;
+    transition: all 0.5s ease-in-out;
+  }
+  &:hover .icon-small {
+    transform: translateY(-0.5rem);
+  }
+}
+.scroll-enter-from,
+.scroll-leave-to {
+  opacity: 0;
+}
+.scroll-enter-active,
+.scroll-leave-active {
+  transition: opacity 0.5s linear;
+}
+.scroll-leave-from,
+.scroll-enter-to {
+  opacity: 1;
+}

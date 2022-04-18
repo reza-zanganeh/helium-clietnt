@@ -1,0 +1,69 @@
+/** @format */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-top: auto;
+  width: 100%;
+  height: 13rem;
+  background: linear-gradient(
+      to right,
+      rgba($dark-slate-blue, 0.25),
+      rgba($dark-slate-blue, 1)
+    ),
+    url('../../assets/img/footer/footer-bg.svg') no-repeat left -40% top,
+    $dark-slate-blue;
+  color: $white-three;
+  border-radius: 10px 10px 0 0;
+  &-container {
+    margin: 0 auto;
+    max-width: 1500px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include respond(93.75em) {
+      padding: 0 2rem;
+    }
+    @include respond(tab-land) {
+      flex-direction: column;
+      justify-content: center;
+      padding: 1rem 0;
+    }
+  }
+
+  &-info {
+    width: 79rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .paragraph-1 {
+      width: 61rem;
+    }
+    @include respond(tab-port) {
+      display: none;
+    }
+  }
+
+  &-logo {
+    width: 11.7rem;
+    height: 4.2rem;
+    filter: brightness(0) invert(1);
+  }
+
+  &-links {
+    width: 45rem;
+    @include respond(phone) {
+      width: 90%;
+    }
+    &__items {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

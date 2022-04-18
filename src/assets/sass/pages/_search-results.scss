@@ -1,0 +1,19 @@
+.searchKeyword {
+  display: flex;
+  align-items: center;
+  margin: 5.9rem 0 4rem 0;
+  &-form {
+    width: calc(100% - 7.1rem);
+  }
+  &-input {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid rgba($water-blue, 0.3);
+    font-family: inherit;
+  }
+}
+.heading-2 {
+  margin-left: 1rem;
+  display: inline-block;
+}
